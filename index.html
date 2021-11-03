@@ -38,7 +38,7 @@
         }
 
         function onPlayerReady(event) {
-        event.target.playVideo()
+        setTimeout(()=>{event.target.playVideo()},1000)
         player.unMute()
       }
 
