@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <title>Loading...</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/96/967bf4cf386d3a9072dad4489a2a0eab4cd27654_full.jpg" type="image/x-icon">
+    <link rel="icon" href="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/96/967bf4cf386d3a9072dad4489a2a0eab4cd27654_full.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body onload="timeout">
+    <div id="cont">
+      <div id="covergg">
+        <img src="https://gifimage.net/wp-content/uploads/2018/04/loading-gif-orange-8.gif" alt="loading..." width="100px" height="100px"><br>
+        <h3 id="mes">Please wait...</h3>
+      </div>
+<h1 id="he">Gotcha ! I Rick Rolled You!</h1>
+<div id="cover"></div>
+<!--<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="50%" height="75%" onload="rockoff" type="text/html" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&is&fs=0&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=0&start=0&end=0&vq=small"></iframe>-->
+<div id="player"></div>
+
+    <script>
+      let btitle = document.title;
+        //display: inline-block;
+        function timeout(){
+          setTimeout(()=>{document.getElementById('mes').innerHTML = 'Something Went Wrong please Refresh!'},60)
+        }
+        
+        function rockoff(){
+            document.title = 'Rick Roll'
+            document.getElementById('lyi').style.color = "white" 
+            document.getElementById('lyi').style.animationDuration = "180s"
+            document.getElementById('he').style.color = "white"
+            var links = document.getElementsByClassName('l')
+            setTimeout(()=>{window.history.replaceState("object or string", "Title", "/rick-roll");},6000)
+
+            for (let i = 0; i < links.length; i++) {
+              const e = links[i];
+              e.style.display = "inline-block"
+            }
+        }
+        function show(){
+          document.getElementById('covergg').style.display = "none"
+        }
+
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '75%',
+          width: '50%',
+          videoId: 'dQw4w9WgXcQ',
+          playerVars: {
+            'playsinline': 1,
+            'disablekb': 0,
+            'origin' : 'classified-site-2021.herokuapp.com'
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      function onPlayerReady(event) {
+        //event.target.playVideo()
+        player.unMute()
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(rockoff,500)
+          setTimeout(show,400)
+          setTimeout(stopVideo, 21200);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+<br>
+<div id="lyi" style="display: inline-block;">We're no strangers to love&nbsp;
+    You know the rules and so do I&nbsp;
+    A full commitment's what I'm thinking of&nbsp;
+    You wouldn't get this from any other guy&nbsp;
+    &nbsp;
+    I just wanna tell you how I'm feeling&nbsp;
+    Gotta make you understand&nbsp;
+    &nbsp;
+    Never gonna give you up&nbsp;
+    Never gonna let you down&nbsp;
+    Never gonna run around and desert you&nbsp;
+    Never gonna make you cry&nbsp;
+    Never gonna say goodbye&nbsp;
+    Never gonna tell a lie and hurt you&nbsp;
+    &nbsp;
+    We've known each other for so long&nbsp;
+    Your heart's been aching, but&nbsp;
+    You're too shy to say it&nbsp;
+    Inside, we both know what's been going on&nbsp;
+    We know the game and we're gonna play it&nbsp;
+    &nbsp;
+    And if you ask me how I'm feeling&nbsp;
+    Don't tell me you're too blind to see&nbsp;
+    &nbsp;
+    Never gonna give you up&nbsp;
+    Never gonna let you down&nbsp;
+    Never gonna run around and desert you&nbsp;
+    Never gonna make you cry&nbsp;
+    Never gonna say goodbye&nbsp;
+    Never gonna tell a lie and hurt you&nbsp;
+    &nbsp;
+    Never gonna give you up&nbsp;
+    Never gonna let you down&nbsp;
+    Never gonna run around and desert you&nbsp;
+    Never gonna make you cry&nbsp;
+    Never gonna say goodbye&nbsp;
+    Never gonna tell a lie and hurt you&nbsp;
+    &nbsp;
+    (Ooh, give you up)&nbsp;
+    (Ooh, give you up)&nbsp;
+    Never gonna give, never gonna give&nbsp;
+    (Give you up)&nbsp;
+    Never gonna give, never gonna give&nbsp;
+    (Give you up)&nbsp;
+    &nbsp;
+    We've known each other for so long&nbsp;
+    Your heart's been aching, but&nbsp;
+    You're too shy to say it&nbsp;
+    Inside, we both know what's been going on&nbsp;
+    We know the game and we're gonna play it&nbsp;
+    &nbsp;
+    I just wanna tell you how I'm feeling&nbsp;
+    Gotta make you understand&nbsp;
+    &nbsp;
+    Never gonna give you up&nbsp;
+    Never gonna let you down&nbsp;
+    Never gonna run around and desert you&nbsp;
+    Never gonna make you cry&nbsp;
+    Never gonna say goodbye&nbsp;
+    Never gonna tell a lie and hurt you&nbsp;
+    &nbsp;
+    Never gonna give you up&nbsp;
+    Never gonna let you down&nbsp;
+    Never gonna run around and desert you&nbsp;
+    Never gonna make you cry&nbsp;
+    Never gonna say goodbye&nbsp;
+    Never gonna tell a lie and hurt you&nbsp;
+    &nbsp;
+    Never gonna give you up&nbsp;
+    Never gonna let you down&nbsp;
+    Never gonna run around and desert you&nbsp;
+    Never gonna make you cry&nbsp;
+    Never gonna say goodbye&nbsp;
+    Never gonna tell a lie and hurt you&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+<br>
+<div id="linkh">
+<a href="https://en.wikipedia.org/wiki/Rickrolling" id="link" class="l">What is Rick Roll</a>
+<a href="https://en.wikipedia.org/wiki/Rick_Astley" id="link2" class="l">Song Credit</a>
+</div>
+</body>
+</html>
