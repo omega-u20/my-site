@@ -7,7 +7,7 @@
     <link rel="icon" href="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/96/967bf4cf386d3a9072dad4489a2a0eab4cd27654_full.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css"/>
 </head>
-<body onload="timeout">
+<body onload="timer">
     <div id="cont">
       <div id="covergg">
         <img src="https://gifimage.net/wp-content/uploads/2018/04/loading-gif-orange-8.gif" alt="loading..." width="100px" height="100px"><br>
@@ -21,8 +21,8 @@
     <script>
       let btitle = document.title;
         //display: inline-block;
-        function timeout(){
-          setTimeout(()=>{document.getElementById('mes').innerHTML = 'Something Went Wrong please Refresh!'},60)
+        function timer(){
+          setTimeout(()=>{document.getElementById('mes').innerHTML = 'Something Went Wrong please Refresh!'},6000)
         }
         
         function rockoff(){
@@ -56,8 +56,7 @@
           videoId: 'dQw4w9WgXcQ',
           playerVars: {
             'playsinline': 1,
-            'disablekb': 0,
-            'origin' : 'classified-site-2021.herokuapp.com'
+            'origin' : 'https://omega-u20.github.io'
           },
           events: {
             'onReady': onPlayerReady,
