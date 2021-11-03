@@ -7,7 +7,7 @@
     <link rel="icon" href="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/96/967bf4cf386d3a9072dad4489a2a0eab4cd27654_full.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css"/>
 </head>
-<body onload="timeout">
+<body>
     <div id="cont">
       <div id="covergg">
         <img src="https://gifimage.net/wp-content/uploads/2018/04/loading-gif-orange-8.gif" alt="loading..." width="100px" height="100px"><br>
@@ -47,14 +47,13 @@
         if (event.data == YT.PlayerState.PLAYING && !done) {
           setTimeout(rockoff,500)
           setTimeout(show,400)
-          //setTimeout(stopVideo, 21200);
+          setTimeout(stopVideo, 8000);
           done = true;
         }
       }
-      /*function stopVideo() {
+      function stopVideo() {
         player.stopVideo();
-      }*/
-        
+      }
         
 
       var tag = document.createElement('script');
@@ -70,8 +69,7 @@
           width: '50%',
           videoId: 'dQw4w9WgXcQ',
           playerVars: {
-            'playsinline': 1,
-            'origin' : 'https://omega-u20.github.io/my-site/'
+            'playsinline': 1
           },
           events: {
             'onReady': onPlayerReady,
