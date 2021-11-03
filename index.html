@@ -7,7 +7,7 @@
     <link rel="icon" href="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/96/967bf4cf386d3a9072dad4489a2a0eab4cd27654_full.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css"/>
 </head>
-<body onload="timer">
+<body onload="timeout">
     <div id="cont">
       <div id="covergg">
         <img src="https://gifimage.net/wp-content/uploads/2018/04/loading-gif-orange-8.gif" alt="loading..." width="100px" height="100px"><br>
@@ -20,18 +20,13 @@
 
     <script>
       let btitle = document.title;
-        //display: inline-block;
-        function timer(){
-          setTimeout(()=>{document.getElementById('mes').innerHTML = 'Something Went Wrong please Refresh!'},6000)
-        }
-        
-        function rockoff(){
+      function rockoff(){
             document.title = 'Rick Roll'
             document.getElementById('lyi').style.color = "white" 
             document.getElementById('lyi').style.animationDuration = "180s"
             document.getElementById('he').style.color = "white"
             var links = document.getElementsByClassName('l')
-            setTimeout(()=>{window.history.replaceState("object or string", "Title", "/rick-roll");},6000)
+            setTimeout(()=>{window.history.replaceState("object or string", "Title", "/rick-roll");},2000)
 
             for (let i = 0; i < links.length; i++) {
               const e = links[i];
@@ -42,30 +37,8 @@
           document.getElementById('covergg').style.display = "none"
         }
 
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '75%',
-          width: '50%',
-          videoId: 'dQw4w9WgXcQ',
-          playerVars: {
-            'playsinline': 1,
-            'origin' : 'https://omega-u20.github.io'
-          },
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-      function onPlayerReady(event) {
-        event.target.playVideoAt(0)
+        function onPlayerReady(event) {
+        event.target.playVideo()
         player.unMute()
       }
 
@@ -81,6 +54,33 @@
       function stopVideo() {
         player.stopVideo();
       }
+        
+        
+
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '75%',
+          width: '50%',
+          videoId: 'dQw4w9WgXcQ',
+          playerVars: {
+            'playsinline': 1,
+            'disablekb': 0,
+            'origin' : 'classified-site-2021.herokuapp.com'
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      
     </script>
 <br>
 <div id="lyi" style="display: inline-block;">We're no strangers to love&nbsp;
