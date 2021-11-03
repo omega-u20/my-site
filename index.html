@@ -47,13 +47,13 @@
         if (event.data == YT.PlayerState.PLAYING && !done) {
           setTimeout(rockoff,500)
           setTimeout(show,400)
-          setTimeout(stopVideo, 21200);
+          //setTimeout(stopVideo, 21200);
           done = true;
         }
       }
-      function stopVideo() {
+      /*function stopVideo() {
         player.stopVideo();
-      }
+      }*/
         
         
 
@@ -71,8 +71,7 @@
           videoId: 'dQw4w9WgXcQ',
           playerVars: {
             'playsinline': 1,
-            'disablekb': 0,
-            'origin' : 'classified-site-2021.herokuapp.com'
+            'origin' : 'https://omega-u20.github.io/my-site/'
           },
           events: {
             'onReady': onPlayerReady,
